@@ -13,10 +13,8 @@ const walk_dom = function(node, func) {
 
 const find_framework_nodes = function() {
 
-  if (node.nodeType === 1) {
-      if (node.hasAttribute('xyz')) {
-        results.push(node);
-      }
+  if (node.nodeType === 1 && node.hasAttribute('xyz')) {
+    results.push(node);
   }
 
 };
